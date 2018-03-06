@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Publications Pro REZALPS</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/pages_rezalps.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="REZALPS reseau social dédié au metier de developpeur informatique">
+  <meta >
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+  <header id="header">
+     <div class="container-fluid">
+      
+        <div class=" row header-top">
+          <div class="col">
+            <img src="img/logo-texte-cote-web.png" id="logo_header" class="rounded float-left" alt="logo-rezalps">
+          </div>
+
+          <div class="col header-top" id="block_btn_droit">
+            <img src="https://image.flaticon.com/icons/svg/633/633816.svg" alt="Notifications" height="30px">
+            <img src="https://image.flaticon.com/icons/svg/12/12194.svg" alt="Messages" height="40px">
+            <a href="page_flux_entreprise.html"><img src="img/icon_home.png" alt="Accueil" height="30px"></a>
+            <a href="page_profil_publications_entreprise.html"><img class="img-contact" src="img/logo_frenchtech.png" width="50" height="40" alt="logo french tech"></a>
+          </div>
+        </div>
+      
+
+       <!-- contacts list -->
+        <div class="row justify-centent-between" id="header_list_contact">
+          <div class="col-lg-8 list">
+          <img class="img-contact" src="img/nico.jpeg" width="30" height="30" alt="photo-profil-nico">
+          <img class="img-contact" src="img/laura.jpeg" width="30" height="30" alt="photo-profil-laura">
+          <img class="img-contact" src="img/vincent.jpeg" width="30" height="30" alt="photo-profil-vincent">
+          <img class="img-contact" src="img/marie.jpg" width="30" height="30" alt="photo-profil-marie">
+          <img class="img-contact" src="img/fabrice.jpeg" width="30" height="30" alt="photo-profil-fabrice">
+          <img class="img-contact" src="img/damienT.jpeg" width="30" height="30" alt="photo-profil-damienT">
+          <img class="img-contact" src="img/anzor.jpeg" width="30" height="30" alt="photo-profil-anzor">
+          <img class="img-contact" src="img/romaric.jpeg" width="30" height="30" alt="photo-profil-romaric">
+          <img class="img-contact" src="img/michael-photo.jpg" width="30" height="30" alt="photo-profil-michael">
+          
+          </div>
+          <div class="col-lg-4">
+            <form class="form-inline" id="search-barre" method="get" action="rezalps-q.php">
+              <input class="form-control " type="search" placeholder="Search" aria-label="Search" name="q">
+              <button class="btn btn-secondary" id="btn_search" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+
+
+      
+    </div>
+  </header>
+  <main>
+
+    <div class="container"> <!-- Header profil -->
+      <section id="main-profil">
+          <div class="row">
+          </div>
+      </section>
+
+      <nav id="main-nav-profil"> <!-- Nav profil -->
+        <div class="row">
+          <div class="col">
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item">
+                <a class="nav-link" href="page_profil_publications_entreprise.html" title="Publications">Publications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page_profil_cv_entreprise.html" title="A_propos">À propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page_profil_media_entreprise.html" title="Medias">Medias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page_profil_reseau_entreprise.html" title="Réseau">Réseau</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </main>
+  <main>
+  <div class="container publications">  <!-- Composition de l'onglet publications de la page profil -->
+    <div class="row">
+      <div class="profil-informations col-lg-3 col-12"> <!-- Colonne "MES INFOS" -->
+        <div class="card">
+          <h4 class="card-header"> MES INFOS</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Développeur</li>
+                    <li class="list-group-item">
+                      <a href="http://www.perdu.com" target="blank_">Mon site</a>
+                    </li>
+                <li class="list-group-item">50 contacts</li>
+              </ul>
+        </div>
+      </div>
+      <div class="profil-publications col-lg-9 col-12"> <!-- Colonne flux publications -->
+<!--  zone fixe pour faire une publication   -->
+        <div class="card-deck"> <!-- PUBLICATION 0 -->
+            <div class="card">   
+               <div class="card-body">
+                <form action="">
+                  <textarea name="" id="" cols="100" rows="3" placeholder="Publier ..."></textarea>
+                  <div class="upload-btn-wrapper">
+                    <button class="btn">Pièce jointe</button>
+                    <input type="file" name="myfile" />
+                  </div>
+                  <div class="alignement_droite">
+                    <input type="submit" class="btn" value="Envoyer" />
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+
+<!--   zones qui afficheront les données enregistrées des publications  -->
+        <div class="card-deck">
+            <div class="card">   <!-- PUBLICATION 1 -->
+               <img class="card-img-top" src="img/logo-appli.png" alt="Logo Rezalps Application">
+               <div class="card-body">
+                 <p class="card-text">Le site Rezalps a enfin ouvert !</p>
+              </div>
+             <div class="card-footer">
+                <small class="text-muted">
+            <button class="button-like"></button>
+                <button class="button-dislike"></button>
+                5 commentaires | Publié il y a 5 minutes</small>
+            </div>
+            <div class="card-deck">       <!-- PUBLICATION 2 -->
+            <div class="card">
+               <div class="card-body">
+                 <p class="card-text">Cet après-midi, pitch de présentation de notre projet ! La vidéo n'est pas prête, j'ai encore des captures d'écrans à fournir, de l'animation à faire, et il est déjà 12h08....Aaaaaaaaah </p>
+              </div>
+             <div class="card-footer">
+                <small class="text-muted">
+            <button class="button-like"></button>
+                <button class="button-dislike"></button>
+                10 commentaires | Publié il y a 15 minutes</small>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p id="SAS" class="row justify-content-center">&copy; EPIK S.A.S</p>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

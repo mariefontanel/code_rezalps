@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connexion REZALPS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/pages_rezalps.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="REZALPS reseau social dédié au metier de developpeur informatique">
+	<meta >
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body class="body">
+
+	<header class="container" id="header_inscription">
+		<div class="row">
+			<div class="col text-center text-sm-left">
+				<img id="logo_header" src="img/logo-text-cote-web.png"  alt="logo-rezalps">
+			</div>
+			<!-- DIV POUR MOBILE, REMPLACE LE SLIDER -->
+			<div class="container" id="mobile_slider">
+				<div class="row justify-content-center">
+					<img class="icon" id="reseau_metier" src="img/social_work.png" alt="social work icon">
+					<p class="col-7 text-center">Le 1er réseau pour les développeurs</p>
+				</div>
+				<div class="row justify-content-center">
+					<img class="icon" id="link_people" src="img/link.png" alt="create link with people">
+					<p class="col-7 text-center">Créateur de liens</p>
+				</div>
+				<div class="row justify-content-center">
+					<img class="icon" id="recrutement" src="img/recrutement.png" alt="recrutement">
+					<p class="col-7 text-center">Recrutez en ligne</p>
+				</div>
+			</div>
+			<div class="container" id="connexion_mobile">
+				<div class="row justify-content-center">
+					<form class="form_connexion" id="form_connexion" method="post" action="">
+						<input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+						<input type="password" class="form-control" placeholder="Mots de passe" aria-label="Username" aria-describedby="basic-addon1">
+						<div class="row justify-content-center" id="connexion_bouton_mobile">
+						<a href="page_profil_publications.html"><button type="button" id="bouton_connexion_top" class="btn btn-secondary">Connexion</button></a>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- FIN DIV POUR MOBILE -->
+			<div class="row bouton_inscription d-none d-sm-block">
+				<div class="input-group mb-3 header_accueil">
+					<form class="form_connexion" id="form_connexion" method="post" action="">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+							<input type="password" class="form-control" placeholder="Mots de passe" aria-label="Username" aria-describedby="basic-addon1">
+							<a href="page_profil_publications.html"><button type="button" id="bouton_connexion_top" class="btn btn-secondary">Connexion</button></a>
+						</div>
+					</form>
+					<a href="#form1"><button type="button" class="btn btn-primary" id="bouton_inscription_top" >S'inscrire</button></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="container-fluid" >
+
+			<div class="row d-none d-md-block d-lg-block">    
+				<div class="col-12 fullsize">
+					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
+						<div class="carousel-inner" id="slide">
+
+							<div class="carousel-item active" id="carousel_img0">
+								<div class="col-xl-3 col-lg-5 col-md-11 text">
+									<h5>Le 1er réseau social "Métier"</h5>									
+									<p>Rezalps est le premier réseau social centré autour du métier de développeur informatique.Que vous soyez novice, développeur aguéri ou une entreprise, venez profiter de l’expertise de la communauté afin d’échanger autour d’une passion commune ! </p>
+								</div>
+							</div>
+							<div class="carousel-item" id="carousel_img1">
+								<div class="col-xl-3 col-lg-5 col-md-11 text">
+									<h5>Créateur de liens</h5>
+									<p>Likez, commentez et partagez l'actualité de vos contacts et agrandissez votre réseau en ayant des interactions avec d'autres personnes. Une question ? Un problème ?Une découverte à partager? Une chose à faire... Pensez Rezalps! </p>
+								</div>
+							</div>
+							<div class="carousel-item" id="carousel_img2">
+								<div class="col-xl-3 col-lg-5 col-md-11 text">
+									<h5>Objectif : recrutement</h5>
+									<p>La demande dans le secteur du développement étant forte, Rezalps se veut être une solution pour vous mettre en contact avec la personne qui conviendra parfaitement à ce que vous cherchez. Partagez vos offres d’emplois et explorez les profils des différents candidats en quelques clics !</p>
+								</div>
+							</div> 
+
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Précédent</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Suivant</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+
+				<div class="col-lg-3 form-group">
+
+					<div class="row justify-content-around">
+						<button class="btn btn-light col-4" id="form1" >Personnel</button>
+						<button class="btn btn-light col-4" id="form2" >Entreprise</button>
+					</div>
+
+					<form class="my_form" id="my_form1" method="post" action=""> <!-- method gère le mode d'envoi et action le fichier qui va gérer les données reçu. -->
+						<label for="name"></label>
+						<input type="name" class="form-control" aria-describedby="écrire votre nom" placeholder="NOM Prénom" name="name" id="name">
+
+						<label for="email-co"></label>
+						<input type="email" class="form-control" aria-describedby="écrire votre email" placeholder="Email" name="email_connexion" id="email-co">
+
+						<label for="mdp"></label>
+						<input type="password" class="form-control" placeholder="Mot de passe" name="mp_connexion" id="mdp">
+
+						<label for="ville"></label>
+						<input type="text" class="form-control" name="ville" placeholder="Ville" id="ville">
+
+						<div class="row justify-content-center cgu_style">
+							<input  type="checkbox" name="cgu" id="cgu">
+							<p>J'accepte les CGU.</p>
+						</div>
+
+						<div class="row justify-content-center">
+							<button type="submit" class="btn btn-light">Inscription</button>
+						</div>
+
+					</form>
+
+					<form class="my_form" id="my_form2" method="post" action=""> <!-- method gère le mode d'envoi et action le fichier qui va gérer les données reçu. -->
+						<label for="entreprise"></label>
+						<input type="name" class="form-control" aria-describedby="écrire le nom de votre société" placeholder="Nom Entreprise" name="Entreprise" id="entreprise">
+
+						<label for="email-co"></label>
+						<input type="email" class="form-control" aria-describedby="écrire votre email" placeholder="Email" name="email_connexion" id="email-co">
+
+						<label for="mdp"></label>
+						<input type="password" class="form-control" placeholder="Mot de passe" name="mp_connexion" id="mdp">
+
+						<label for="ville"></label>
+						<input type="text" class="form-control" name="ville" placeholder="Ville" id="ville">
+
+						<label for="siret"></label>
+						<input type="text" class="form-control" name="siret" placeholder="SIRET" id="siret">
+
+						<div class="row justify-content-center cgu_style">
+							<input  type="checkbox" name="cgu" id="cgu">
+							<p>J'accepte les CGU.</p>
+						</div>
+
+						<div class="row justify-content-center">
+							<button type="submit" class="btn btn-light">Inscription</button>
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+
+
+	<footer>
+		<p id="SAS" class="row justify-content-center">&copy; EPIK S.A.S</p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+	<script src="js/jquery_validate.js" ></script>
+	<script src="js/script_accueil.js" ></script>
+	<script src="js/script_validations.js" ></script>
+</body>
+</html>

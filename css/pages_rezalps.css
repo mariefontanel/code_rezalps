@@ -1,0 +1,401 @@
+					/*PAGE PROFIL_PUBLICATION*/
+
+
+					/*debut HEADER*/
+#header {
+    background: linear-gradient(to right, #FF9F6E 10%, #DE406E 30%);
+} 
+
+.img-contact {
+    border: 1px solid lightgrey;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.header-top, #logo_header {
+    padding-top: 9px;
+}
+
+#logo_header{
+	height: 65px;
+}
+
+#main-profil {
+    width: 100%;
+    height: 200px;
+    background-color: #ffefd4;
+}
+
+#btn_search{
+	height: 38px;
+	margin-left: 1px;
+}
+
+#block_btn_droit{
+	text-align: end;
+}
+
+.alert {
+    background-color: #FFEED1;
+}
+.bordertop {
+    border: 1px black solid;
+    margin: auto;
+}
+.margin-right {
+    margin-right: 1px;
+}
+.popupcloche {
+    margin-right: 1px;
+}
+
+#header_list_contact{
+	border-top: 1.5px solid #f8896e;
+	padding: 8px 0 8px 0;
+}
+
+#search-barre{
+	justify-content: end;
+}
+
+
+
+
+
+
+#main-profil {
+    width: 100%;
+    height: 200px;
+    background-color: #ffefd4;
+}
+.publications {
+/*	background-color: grey;
+*/}
+
+.profil-informations {
+/*	background-color: blue;
+*/}
+
+.profil-publications {
+	/*background-color: red;*/
+}
+
+.profil-informations li {
+	list-style-type: none;
+	font-family: "Montserrat"
+}
+
+.card-title h4 {
+	font-family: "Montserrat";
+	font-weight: bold;
+}
+
+.card-img-top {
+	/*max-height: 80%;*/
+	max-width: 40%;
+}
+
+.button-like {         /*ATTENDRE PLUS TARD POUR GERER L'ANIMATION DES BOUTONS*/
+	width: 43px;
+	height: 34px;
+	border: 0px;
+	padding: 0px;
+	background:url(images/like-off.png);
+	background-repeat: no-repeat;
+}
+
+
+.button-like:hover {
+	background:url(images/like-on.png);
+}
+
+.button-dislike {         /*ATTENDRE PLUS TARD POUR GERER L'ANIMATION DES BOUTONS*/
+	width: 43px;
+	height: 34px;
+	border: 0px;
+	padding: 0px;
+	background:url(images/dislike-off.png);
+	background-repeat: no-repeat;
+}
+
+.button-dislike:hover {
+	background:url(images/dislike-on.png);
+}
+
+.card-img-top {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+textarea {
+	width: 100%;
+}
+/*Bouton chargement d'image*/
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.alignement_droite {
+	float: right;
+}
+
+				/*"PROFIL" PAGE REZALPS*/
+
+
+
+
+
+
+
+/*
+.barre-contacts {
+	background-color: #FFEED1;
+}
+*/
+
+
+
+
+/*First big section*/
+
+.img-page-profil {
+	border: 1.5px solid lightgrey;
+	width: 150px;
+  	height: 150px;
+	border-radius: 100%;
+}
+
+
+
+					/*"CONNEXION" PAGE*/
+
+
+.body, #header_inscription {
+	background: #DE406E;
+}
+
+#SAS {
+	margin: 15px 0;
+}
+
+.fullsize{
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+	
+.cgu_style {
+	margin: 15px;
+}
+
+
+			/*Header*/
+
+.input-group{
+	padding-left: 3px;
+}
+
+.header_accueil
+{
+	margin-top: 15px;
+}
+
+.name-profil{
+	vertical-align: center;
+}
+
+.container-list {	
+	overflow-y: hidden;
+}
+
+.list {
+width: 2000px;
+	overflow-y: hidden;
+}
+
+#bouton_inscription_top{
+	margin-left: 10px;
+}
+#bouton_connexion_top{
+margin-left: 5px;	
+}
+				/*Slider*/
+#slide {
+	height: 80vh;
+}
+
+#carousel_img0{
+	background-image: url("img/slide_code_1080.jpg");
+	height: 80vh;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	
+}
+
+#carousel_img1{
+	background-image: url("img/slide_entraide_1080.jpg");
+	height: 80vh;
+	background-repeat: no-repeat;
+}
+
+#carousel_img2{
+	background-image: url("img/slide_entreprise_1080.jpg");
+	height: 80vh;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon
+{
+	height: 50px;
+	width: 50px;
+}
+
+.text  {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: solid 3px lightgrey;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px 10px 0px 10px;
+   
+
+   }
+
+
+.carousel-item { /*uniquement pour résoudre le pb de transistion sous firefox*/
+	transition: -webkit-transform 0.5s ease;
+	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+	-webkit-backface-visibility: visible;
+	        backface-visibility: visible;
+}
+
+.carousel-inner{
+     height: 100%;
+}
+
+#mobile_slider
+{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#connexion_mobile
+{
+	margin-bottom: 50px;	
+}
+
+#connexion_bouton_mobile
+{
+	margin-top: 20px;	
+}
+
+@media (max-width: 992px)    
+{
+	#carousel_img0
+	{
+		background-image: url("img/slide_code_768.jpg");
+	}
+	#carousel_img1
+	{
+		background-image: url("img/slide_entraide_768.jpg");
+		background-position: center;
+	}
+	#carousel_img2
+	{
+		background-image: url("img/slide_entreprise_768.jpg");
+	}
+}
+
+@media (min-width: 576px) 
+{
+	#mobile_slider   /* Ce qui remplace le carousel en version mobile*/
+	{
+		display: none;
+	}
+		#connexion_mobile
+	{
+		display: none;
+	}
+}
+
+/* CSS Page CV */
+/*Ajout lié au style du viewer PDF*/
+.pdfobject
+{ 
+	width: 100%;
+	max-width: 600px;
+	height: 600px;
+	margin: 2em 0;
+}
+.pdfobject { border: 1px solid #666; }
+#results { padding: 1rem; }
+.hidden { display: none; }
+.success { color: #4F8A10; background-color: #DFF2BF; }
+.fail { color: #D8000C; background-color: #FFBABA; }
+
+/*fin de l'ajout lié au style du viewer PDF*/
+#apropos {
+	margin-left: 10px;
+}
+#pitchhobby {
+	overflow: hidden;
+}
+
+#hobby {
+	width: auto;
+	height: auto;
+}
+
+/*CSS Page Réseau */
+.img_contact {
+	border: 1px solid lightgrey;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+}
+#profsug {
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: 1%;
+	margin-bottom: 1px solid rgba(0,0,0,.125);
+}
+#profamis {
+	border-radius: 1%;
+	margin-bottom: 1px solid rgba(0,0,0,.125);
+}
+#profent {
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: 1%;
+	margin-bottom: 5px solid rgba(0,0,0,.125);
+}
+
+
+
+	/*PAGE FLUX_BOX_commentaire*/
+
+#new_publications{
+	margin-top: 15px;
+}

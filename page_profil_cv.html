@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CV REZALPS</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/pages_rezalps.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="REZALPS reseau social dédié au metier de developpeur informatique">
+  <meta >
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+
+      <div class=" row header-top">
+        <div class="col">
+          <img src="img/logo-texte-cote-web.png" id="logo_header" class="rounded float-left" alt="logo-rezalps">
+        </div>
+
+        <div class="col header-top" id="block_btn_droit">
+          <img src="https://image.flaticon.com/icons/svg/633/633816.svg" alt="Notifications" height="30px">
+            <img src="https://image.flaticon.com/icons/svg/12/12194.svg" alt="Messages" height="40px">
+            <a href="page_flux.html"><img src="img/icon_home.png" alt="Accueil" height="30px"></a>
+            <a href="page_profil_publications.html"><img class="img-contact" src="img/michael-photo.jpg" width="50" height="40" alt="photo-profil-michael"></a>
+        </div>
+      </div>
+      
+
+      <!-- contacts list -->
+      <div class="row justify-centent-between" id="header_list_contact">
+        <div class="col-lg-8 list">
+
+          <img class="img-contact" src="img/nico.jpeg" width="30" height="30" alt="photo-profil-nico">
+          <img class="img-contact" src="img/laura.jpeg" width="30" height="30" alt="photo-profil-laura">
+          <img class="img-contact" src="img/vincent.jpeg" width="30" height="30" alt="photo-profil-vincent">
+          <img class="img-contact" src="img/marie.jpg" width="30" height="30" alt="photo-profil-marie">
+          <img class="img-contact" src="img/fabrice.jpeg" width="30" height="30" alt="photo-profil-fabrice">
+          <img class="img-contact" src="img/damienT.jpeg" width="30" height="30" alt="photo-profil-damienT">
+          <img class="img-contact" src="img/anzor.jpeg" width="30" height="30" alt="photo-profil-anzor">
+          <img class="img-contact" src="img/romaric.jpeg" width="30" height="30" alt="photo-profil-romaric">
+          
+        </div>
+        <div class="col-lg-4">
+          <form class="form-inline" id="search-barre" method="get" action="rezalps-q.php">
+            <input class="form-control " type="search" placeholder="Search" aria-label="Search" name="q">
+            <button class="btn btn-secondary" id="btn_search" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+
+
+      
+    </div>
+  </header>
+  <main>
+    <div class="container">
+     <section id="main-profil">
+      <div class="row">
+
+
+      </div>
+    </section>
+    <nav id="main-nav-profil">
+      <div class="row">
+       <div class="col-12">
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+            <a class="nav-link" href="page_profil_publications.html" title="Publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page_profil_cv.html" title="CV">CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page_profil_media.html" title="Medias">Medias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page_profil_reseau.html" title="Réseau">Réseau</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="content">
+   <div class="row">
+    <div class=" row col-12">
+     <div class="col-md-3 col-sm-12">
+      <div id="apropos">
+       <h2>A propos</h2>
+       <div class="card">
+       <p>
+         Constituendi autem sunt qui sint in amicitia fines et quasi termini diligendi. De quibus tres video sententias ferri, quarum nullam probo, unam, ut eodem modo erga amicum adfecti simus, quo erga nosmet ipsos, alteram, ut nostra in amicos benevolentia illorum erga nos benevolentiae pariter aequaliterque respondeat, tertiam, ut, quanti quisque se ipse facit, tanti fiat ab amicis.
+       </p>
+     </div>
+     </div>
+   </div>
+   <div class="col-md-6 col-sm-12">
+    <div id="experiences">
+      <h2>CV</h2>
+      <div class="card">
+      <p>Pour afficher votre CV sur votre page veuillez l'importer ci-dessous.</p>                  
+      <form method="post" action="" >
+        <div class="upload-btn-wrapper">
+          <button class="btn">Importer</button>
+          <input type="file" name="myfile" />
+        </div>
+        <div class="alignement_droite">
+          <input type="submit" class="btn" value="Soumettre" />
+        </div>
+      </form>  
+      <!-- La div suivante permet de rajouter un viewer PDF -->                      
+      <div id="pdf">
+        <div class="pdfobject-com">
+          <embed class="pdfobject" src="img/PDF_test.pdf" type="application/pdf">                              
+          </div>
+        </div>
+        </div>        
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <div id="pitchhobby">
+       <div id="pitch">
+        <h3>Video de présentation</h3>
+        <video src="video-link" type="video/mp4" poster="images/sunset.jpg" width="300" height="300" controls></video>
+      </div>
+      <div id="hobby">
+        <h3>Mes hobbies</h3>
+        <p>
+          Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis viribus a fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam mari committat
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+<footer>
+  <p id="SAS" class="row justify-content-center">&copy; EPIK S.A.S</p>
+</footer>
+<script type="text/javascript" src="affichage_pdf.js"></script>
+</body>
+</html>		
