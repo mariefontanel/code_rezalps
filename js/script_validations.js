@@ -1,7 +1,36 @@
 //lancement du plugin validate de JQuery !!! 
 
 $(document).ready(function () {
-    
+
+
+  $.validator.addMethod("valid_siret", function(value) {
+    var siret;
+    var somme = 0;
+    var tempo;
+     // Les 9 premiers chiffres sont ceux du SIREN (ou RCS), les 4 suivants
+     // correspondent au numéro d'établissement
+     // et enfin le dernier chiffre est une clef de LUHN. 
+    for (var i = 0; i < value.length; i++) {
+        if ((i % 2) == 0) { // Les positions impaires : 1er, 3è, 5è, etc... 
+            tempo = value.charAt(i) * 2; // On le multiplie par 2
+            if (tempo > 9) {
+                tempo -= 9;   // Si le résultat est supérieur à 9, on lui soustrait 9
+            }
+        }
+        else {
+            tempo = value.charAt(i);
+            somme += parseInt(tempo);
+        }
+    }
+        if ((somme % 10) == 0) {
+            siret = true; // Si la somme est un multiple de 10 alors le SIRET est valide 
+        } else {
+            siret = false;
+        }
+    return siret
+    });
+
+
     // ajout regex mot de passe pour plugin validate
     /*$.validator.addMethod("mp_force", function(value) {
         var lowerCaseRegexp = /^[a-zA-Z]*[0-9]+[a-zA-Z]*$/;
@@ -12,6 +41,7 @@ $(document).ready(function () {
            && upperCaseRegexp.test(value) // contient une majuscule
            //&& numericRegexp.test(value) // contient un chiffre
     });*/
+
      $.validator.addMethod("mp_force", function(value) {
         var lowerCaseRegexp = /[a-z]+/;
         var upperCaseRegexp = /[A-Z]+/;
@@ -97,7 +127,8 @@ $(document).ready(function () {
                 required:true,
                 number: true,
                 minlength: 14,
-                maxlength: 14
+                maxlength: 14,
+                valid_siret: true
             },
             cgu: {
                 required: true
@@ -124,7 +155,8 @@ $(document).ready(function () {
                 required: "Merci de renseigner un siret",
                 number: "Merci de renseigner un siret valide",
                 minlength: "Merci de renseigner un siret valide",
-                maxlength: "Merci de renseigner un siret valide"
+                maxlength: "Merci de renseigner un siret valide",
+                valid_siret: "Merci de vérifier votre saisie"
             },
             cgu: {
                 required: "Merci d'accepter nos CGU"
@@ -133,6 +165,8 @@ $(document).ready(function () {
     });
 });
 
+
+ 
 // vérification MP (merci Rémi)
 
 // function verification_password() {
@@ -205,8 +239,7 @@ $(document).ready(function () {
 
 
 
-/*Appel de la vérfication MP formulaire.
+// Appel de la vérfication MP formulaire.
+// $("#mp").on('change select blur keyup', verification_password);
+// $(password_confirm).on('change select blur keyup', confirmation_password);
 
- $("#mp").on('change select blur keyup', verification_password);
-$(password_confirm).on('change select blur keyup', confirmation_password);
-*/
